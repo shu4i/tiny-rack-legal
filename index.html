@@ -58,10 +58,28 @@ footer {
   margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
   color: var(--dim); font-size: 13px; line-height: 2;
 }
+h2 { scroll-margin-top: 20px; }
+.table-wrap { overflow-x: auto; margin: 0 0 18px; -webkit-overflow-scrolling: touch; }
+table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+}
+th, td {
+  padding: 10px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+th { color: var(--brass); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+.note {
+  padding: 14px 16px; margin: 0 0 20px; border-radius: 8px;
+  background: #17130D; border: 1px solid #3A3124; font-size: 14px;
+}
+.note strong { color: var(--brass); }
 @media (max-width: 480px) {
   .wrap { padding: 26px 18px 60px; }
   body { font-size: 15px; }
   h1 { font-size: 21px; }
+  th, td { padding: 8px 9px; font-size: 13px; }
 }
 </style>
 </head>
